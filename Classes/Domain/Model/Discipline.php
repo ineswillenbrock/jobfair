@@ -22,13 +22,12 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Discipline
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Discipline extends AbstractEntity
 {
     /**
      * name
-     *
-     * @var string
      */
     protected $name = '';
 
@@ -61,20 +60,16 @@ class Discipline extends AbstractEntity
 
     /**
      * Returns the name
-     *
-     * @return string $name
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
      * Sets the name
-     *
-     * @param string $name
      */
-    public function setName($name)
+    public function setNamesr(sttring $name): void
     {
         $this->name = $name;
     }

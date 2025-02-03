@@ -22,6 +22,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Filter
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Filter extends AbstractEntity
 {
@@ -62,31 +63,23 @@ class Filter extends AbstractEntity
 
     /**
      * job type
-     *
-     * @var int
      */
-    protected $jobType;
+    protected int $jobType;
 
     /**
      * contract types
-     *
-     * @var int
      */
-    protected $contractType;
+    protected int $contractType;
 
     /**
      * searchword
-     *
-     * @var string
      */
-    protected $searchword;
+    protected string $searchword;
 
     /**
      * own
-     *
-     * @var int
      */
-    protected $own;
+    protected int $own;
 
     /**
      * __construct
@@ -262,80 +255,64 @@ class Filter extends AbstractEntity
 
     /**
      * Returns the jobType
-     *
-     * @return int $jobType
      */
-    public function getJobType()
+    public function getJobType(): int
     {
         return $this->jobType;
     }
 
     /**
      * Sets the jobType
-     *
-     * @param \integer $jobType
      */
-    public function setJobType($jobType)
+    public function setJobType(int $jobType): void
     {
         $this->jobType = $jobType;
     }
 
     /**
      * Returns the contractType
-     *
-     * @return int $contractType
      */
-    public function getContractType()
+    public function getContractType(): int
     {
         return $this->contractType;
     }
 
     /**
      * Sets the contractType
-     *
-     * @param \integer $contractType
      */
-    public function setContractType($contractType)
+    public function setContractType(int $contractType): void
     {
         $this->contractType = $contractType;
     }
 
     /**
      * Returns the searchword
-     *
-     * @return string $searchword
      */
-    public function getSearchword()
+    public function getSearchword(): string
     {
         return $this->searchword;
     }
 
     /**
      * Sets the searchword
-     *
-     * @param string $searchword
      */
-    public function setSearchword($searchword)
+    public function setSearchword(string $searchword): void
     {
         $this->searchword = $searchword;
     }
 
     /**
      * Returns own
-     *
-     * @return int $own
      */
-    public function getOwn()
+    public function getOwn(): int
     {
         return $this->own;
     }
 
     /**
      * Sets own
-     *
-     * @param \integer $own
      */
-    public function setOwn($own)
+    public function setOwn(int $own): void
     {
         $this->own = $own;
     }

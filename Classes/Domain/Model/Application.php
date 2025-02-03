@@ -23,36 +23,38 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Application
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Application extends AbstractEntity
 {
+
     /**
      * title
      *
      * @var string
      */
-    protected $title = '';
+    protected string $title = '';
 
     /**
      * name
      *
      * @var string
      */
-    protected $name = '';
+    protected string $name = '';
 
     /**
      * email
      *
      * @var string
      */
-    protected $email = '';
+    protected string $email = '';
 
     /**
      * message
      *
      * @var string
      */
-    protected $message = '';
+    protected string $message = '';
 
     /**
      * attachment
@@ -91,7 +93,7 @@ class Application extends AbstractEntity
      *
      * @return string $title
      */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -101,7 +103,7 @@ class Application extends AbstractEntity
      *
      * @param string $title
      */
-    public function setTitle($title)
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
@@ -111,7 +113,7 @@ class Application extends AbstractEntity
      *
      * @return string $name
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -121,7 +123,7 @@ class Application extends AbstractEntity
      *
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -131,7 +133,7 @@ class Application extends AbstractEntity
      *
      * @return string $email
      */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -141,7 +143,7 @@ class Application extends AbstractEntity
      *
      * @param string $email
      */
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
@@ -151,7 +153,7 @@ class Application extends AbstractEntity
        *
        * @return string $message
        */
-    public function getMessage()
+    public function getMessage(): void
     {
         return $this->message;
     }
@@ -161,7 +163,7 @@ class Application extends AbstractEntity
      *
      * @param string $message
      */
-    public function setMessage($message)
+    public function setMessage(string $message): void
     {
         $this->message = $message;
     }

@@ -22,15 +22,14 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Sector
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Sector extends AbstractEntity
 {
     /**
      * name
-     *
-     * @var string
      */
-    protected $name = '';
+    protected string $name = '';
 
     /**
      * jobs
@@ -61,20 +60,16 @@ class Sector extends AbstractEntity
 
     /**
      * Returns the name
-     *
-     * @return string $name
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
      * Sets the name
-     *
-     * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }

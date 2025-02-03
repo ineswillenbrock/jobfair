@@ -23,43 +23,34 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Contact
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Contact extends AbstractEntity
 {
     /**
      * name
-     *
-     * @var string
      */
-    protected $name = '';
+    protected string $name = '';
 
     /**
      * address
-     *
-     * @var string
      */
-    protected $address = '';
+    protected string $address = '';
 
     /**
      * phone
-     *
-     * @var string
      */
-    protected $phone = '';
+    protected string $phone = '';
 
     /**
      * email
-     *
-     * @var string
      */
-    protected $email = '';
+    protected string $email = '';
 
     /**
-     * email
-     *
-     * @var string
+     * website
      */
-    protected $www = '';
+    protected string $www = '';
 
     /**
      * contactImage
@@ -69,128 +60,100 @@ class Contact extends AbstractEntity
 
     /**
      * nameCc
-     *
-     * @var string
      */
-    protected $nameCc = '';
+    protected string $nameCc = '';
 
     /**
      * emailCc
-     *
-     * @var string
      */
-    protected $emailCc = '';
+    protected string $emailCc = '';
 
     /**
      * nameBcc
-     *
-     * @var string
      */
-    protected $nameBcc = '';
+    protected string $nameBcc = '';
 
     /**
      * emailBcc
-     *
-     * @var string
      */
-    protected $emailBcc = '';
+    protected string $emailBcc = '';
 
     /**
      * Returns the name
-     *
-     * @return string $name
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
      * Sets the name
-     *
-     * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
     /**
      * Returns the address
-     *
-     * @return string $address
      */
-    public function getAddress()
+    public function getAddress(): string
     {
         return $this->address;
     }
 
     /**
      * Sets the address
-     *
-     * @param string $address
      */
-    public function setAddress($address)
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
 
     /**
      * Returns the phone
-     *
-     * @return string $phone
      */
-    public function getPhone()
+    public function getPhone(): string
     {
         return $this->phone;
     }
 
     /**
      * Sets the phone
-     *
-     * @param string $phone
      */
-    public function setPhone($phone)
+    public function setPhone (string $phone): void
     {
         $this->phone = $phone;
     }
 
     /**
      * Returns the email
-     *
-     * @return string $email
      */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
     /**
      * Sets the email
-     *
-     * @param string $email
      */
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
     /**
      * Returns the www
-     *
-     * @return string $www
      */
-    public function getWww()
+    public function getWww(): string
     {
         return $this->www;
     }
 
     /**
      * Sets the www
-     *
-     * @param string $www
      */
-    public function setWww($www)
+    public function setWww(string $www): void
     {
         $this->www = $www;
     }
@@ -217,80 +180,64 @@ class Contact extends AbstractEntity
 
     /**
      * Returns the nameCc
-     *
-     * @return string $nameCc
      */
-    public function getNameCc()
+    public function getNameCc(): string
     {
         return $this->nameCc;
     }
 
     /**
      * Sets the nameCc
-     *
-     * @param string $nameCc
      */
-    public function setNameCc($nameCc)
+    public function setNameCc(string $nameCc): void
     {
         $this->nameCc = $nameCc;
     }
 
     /**
      * Returns the emailCc
-     *
-     * @return string $emailCc
      */
-    public function getEmailCc()
+    public function getEmailCc(): string
     {
         return $this->emailCc;
     }
 
     /**
      * Sets the emailCc
-     *
-     * @param string $emailCc
      */
-    public function setEmailCc($emailCc)
+    public function setEmailCc(string $emailCc): void
     {
         $this->emailCc = $emailCc;
     }
 
     /**
      * Returns the nameBcc
-     *
-     * @return string $nameBcc
      */
-    public function getNameBcc()
+    public function getNameBcc(): string
     {
         return $this->nameBcc;
     }
 
     /**
      * Sets the nameBcc
-     *
-     * @param string $nameBcc
      */
-    public function setNameBcc($nameBcc)
+    public function setNameBcc(string $nameBcc): void
     {
         $this->nameBcc = $nameBcc;
     }
 
     /**
      * Returns the emailBcc
-     *
-     * @return string $emailBcc
      */
-    public function getEmailBcc()
+    public function getEmailBcc(): string
     {
         return $this->emailBcc;
     }
 
     /**
      * Sets the emailBcc
-     *
-     * @param string $emailBcc
      */
-    public function setEmailBcc($emailBcc)
+    public function setEmailBcc(string $emailBcc): void
     {
         $this->emailBcc = $emailBcc;
     }

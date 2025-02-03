@@ -23,15 +23,14 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  * The model for Job
  *
  * @author Dan <typo3dev@outlook.com>
+ * @author Ines Willenbrock <ines@insert-into.net>
  */
 class Job extends AbstractEntity
 {
     /**
      * jobTitle
-     *
-     * @var string
      */
-    protected $jobTitle = '';
+    protected string $jobTitle = '';
 
     /**
      * jobImage
@@ -41,87 +40,63 @@ class Job extends AbstractEntity
 
     /**
      * employer
-     *
-     * @var string
      */
-    protected $employer = '';
+    protected string $employer = '';
 
     /**
      * employerDescription
-     *
-     * @var string
      */
-    protected $employerDescription = '';
+    protected string $employerDescription = '';
 
     /**
      * location
-     *
-     * @var string
      */
-    protected $location = '';
+    protected string $location = '';
 
     /**
      * shortJobDescription
-     *
-     * @var string
      */
-    protected $shortJobDescription = '';
+    protected string $shortJobDescription = '';
 
     /**
      * jobDescription
-     *
-     * @var string
      */
-    protected $jobDescription = '';
+    protected string $jobDescription = '';
 
     /**
      * experience
-     *
-     * @var string
      */
-    protected $experience = '';
+    protected string $experience = '';
 
     /**
      * jobRequirements
-     *
-     * @var string
      */
-    protected $jobRequirements = '';
+    protected string $jobRequirements = '';
 
     /**
      * jobBenefits
-     *
-     * @var string
      */
-    protected $jobBenefits = '';
+    protected string $jobBenefits = '';
 
     /**
      * applyInformation
-     *
-     * @var string
      */
-    protected $applyInformation = '';
+    protected string $applyInformation = '';
 
     /**
      * salary
-     *
-     * @var string
      */
-    protected $salary = '';
+    protected string $salary = '';
 
     /**
      * jobType
-     *
-     * @var int
      */
-    protected $jobType = 0;
+    protected int $jobType = 0;
 
     /**
      * contractType
-     *
-     * @var int
      */
-    protected $contractType = 0;
+    protected int $contractType = 0;
 
     /**
      * region
@@ -181,28 +156,33 @@ class Job extends AbstractEntity
 
     /**
      * @var \DateTime
+     * might be unneeded
      */
     protected $starttime;
 
     /**
      * @var \DateTime
+     * might be unneeded
      */
     protected $endtime;
 
     /**
      * @var int
+     * migth be unneeded
      */
-    protected $hidden;
+    protected int $hidden;
 
     /**
        * crdate
-       *
+       * might be unneeded
+       * 
        * @var \DateTime
        */
     protected $crdate;
 
     /**
      * tstamp
+     * might be unneeded
      *
      * @var \DateTime
      */
@@ -210,10 +190,11 @@ class Job extends AbstractEntity
 
     /**
      * sorting
-     *
+     * might be unneeded
+     * 
      * @var int
      */
-    protected $sorting;
+    protected int $sorting;
 
     /**
      * __construct
